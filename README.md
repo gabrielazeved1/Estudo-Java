@@ -1,4 +1,4 @@
-# Passo a passo genérico para criar e rodar projetos JavaFX usando Sublime Text no macOS
+# Passo a passo para criar e rodar projetos JavaFX usando Sublime Text no macOS
 
 ---
 
@@ -57,4 +57,3 @@ Ainda no terminal, rode:
 ---
 
 Esse fluxo serve para todos os seus projetos JavaFX, apenas altere os nomes das pastas, arquivos e classes conforme precisar.
-# Estudo-Java
