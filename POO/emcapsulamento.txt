@@ -1,0 +1,41 @@
+=== O QUE É ENCAPSULAMENTO? ===
+
+O encapsulamento é um dos pilares da Programação Orientada a Objetos (POO). Ele funciona como uma "cápsula" ou "caixa de proteção" para os dados de um objeto.
+
+A ideia principal é:
+
+  1. Proteger os dados internos de uma classe, tornando-os **privados**.
+  2. Oferecer uma forma controlada (através de **métodos públicos**) para interagir com esses dados.
+
+---
+
+=== COMO ISSO FUNCIONA NO SEU CÓDIGO? ===
+
+No seu código da classe `Produto`, você definiu os atributos da seguinte maneira:
+
+    private String nome;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+A palavra-chave `private` significa que esses atributos só podem ser acessados e modificados diretamente DENTRO da própria classe `Produto`.
+
+Imagine que a classe `Produto` é um cofre:
+
+    - Os atributos (nome, preco, quantidade) são o dinheiro guardado dentro do cofre. Eles são privados e não podem ser tocados por ninguém de fora.
+
+    - O método `exibirInformacoes()` é a janela de atendimento do cofre. Ele é público, então qualquer pessoa pode interagir com ele.
+
+Quando sua classe `Main` quer ver as informações do produto, ela não tenta "arrombar o cofre" para pegar o dinheiro. Em vez disso, ela usa a "janela de atendimento" (o método `exibirInformacoes()`) para pedir que o próprio cofre mostre o que tem dentro.
+
+O comando:
+    produto1.exibirInformacoes();
+
+...diz ao objeto `produto1` para executar seu método público, que por sua vez, tem permissão total para acessar e exibir seus próprios atributos privados.
+
+---
+
+=== POR QUE ISSO É IMPORTANTE? ===
+
+1. **Proteção de dados:** Impede que outras partes do seu programa alterem os dados de um objeto de forma acidental ou incorreta. Por exemplo, você pode garantir que o preço de um produto nunca seja negativo.
+
+2. **Flexibilidade:** Permite que você mude a forma como os dados são armazenados internamente sem afetar o resto do seu código. Se amanhã você decidir armazenar a quantidade em estoque de outra forma, basta mudar a lógica dentro da classe `Produto` e o método `exibirInformacoes()`, e a classe `Main` continuará funcionando.
