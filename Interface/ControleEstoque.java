@@ -58,7 +58,8 @@ public class ControleEstoque {
         produto.removerQuantidade(70);
         System.out.println("O novo valor de estoque apos a remocao é: " + produto.getQuantidade());
 
-
+// Isso é chamado de programar para a interface e não para a implementação.
+//Em Java (e em POO no geral), é uma boa prática declarar a variável usando o tipo mais genérico possível (interface ou classe abstrata), mas instanciar com a implementação concreta.
 
     }
 }
