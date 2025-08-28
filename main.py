@@ -1,3 +1,7 @@
-oi = "ola mundo"
+a = 10
+b = 5
 
-print(oi)
+def soma(a,b):
+    return a + b
+
+print (soma(10,200))
