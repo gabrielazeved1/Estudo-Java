@@ -21,3 +21,6 @@ verificar_tipo(b)       # Vai imprimir "É um número"
 verificar_tipo(a)       # Vai imprimir "É uma string"
 verificar_tipo(10)      # Vai imprimir "É um número"
 verificar_tipo("teste") # Vai imprimir "É uma string"
+
+
+verificar_tipo(10000000)
