@@ -1,9 +1,0 @@
-a = 1
-b= 2
-print (a + b)
-
-print ("ola mundo")
-
-print (" hello")
-
-print (1-2)
