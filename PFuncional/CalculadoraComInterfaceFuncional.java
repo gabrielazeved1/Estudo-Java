@@ -1,12 +1,12 @@
 package PFuncional;
-
+// declara interface
 @FunctionalInterface
 interface Calculadora{
 
     double calcular(double a , double b);
 }
 
-
+// implementa reduzindo codigo 
 public class CalculadoraComInterfaceFuncional {
     public static void main(String[] args) {
         
