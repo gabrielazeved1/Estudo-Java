@@ -18,7 +18,7 @@ public class ExemploImagens extends Application {
     @Override
     public void start(Stage palco) {
         // Caminho absoluto para a imagem no Windows
-        String caminhoImagem = "imagem-gato.jpg";
+        String caminhoImagem = "/Users/gabrielazevedo/projects/src/Java/imagem-gato.jpg";
 
         Image imagem = new Image(caminhoImagem);
         ImageView imageView = new ImageView(imagem);
