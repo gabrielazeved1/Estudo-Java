@@ -57,3 +57,17 @@ Ainda no terminal, rode:
 ---
 
 Esse fluxo serve para todos os seus projetos JavaFX, apenas altere os nomes das pastas, arquivos e classes conforme precisar.
+
+
+
+cd .. 
+# Agora você deve estar em ~/projects/src/Java
+
+
+compilar
+
+# Estando na pasta ~/projects/src/Java
+javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
+
+# Ainda na pasta ~/projects/src/Java
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
