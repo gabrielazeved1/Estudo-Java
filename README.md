@@ -70,4 +70,4 @@ compilar
 javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
 
 # Ainda na pasta ~/projects/src/Java
-java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml pasta.classes
