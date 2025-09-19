@@ -71,6 +71,3 @@ javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . p
 
 # Ainda na pasta ~/projects/src/Java
 java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml pasta.classes
-
-
-precisa ser corrigdo
