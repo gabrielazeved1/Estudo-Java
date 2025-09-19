@@ -51,7 +51,6 @@ Ainda no terminal, rode:
 
 - Configure a variável de ambiente `PATH_TO_FX` para o caminho do JavaFX SDK.
 - Utilize scripts `.sh` para automatizar compilação e execução. -> ou makefile
-- Organize seu código em pacotes se o projeto crescer.
 - Sempre abra a pasta do projeto com `subl .` para facilitar a edição.
 
 ---
