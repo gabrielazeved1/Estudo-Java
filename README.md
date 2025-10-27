@@ -29,11 +29,11 @@ Lembre-se de que sua classe principal deve estender `javafx.application.Applicat
 
 ## 4. Compilar o projeto
 
-No terminal, dentro da pasta do projeto, rode o comando:
+No terminal, estando na pasta ~/projects/src/Java, rode o comando:
 
-    javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml [arquivos].java
+    javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
 
-> Substitua `[arquivos].java` pelos arquivos Java do seu projeto.
+> Substitua `pasta/[arquivos].java` pelos arquivos Java do seu projeto.
 
 ---
 
@@ -41,9 +41,9 @@ No terminal, dentro da pasta do projeto, rode o comando:
 
 Ainda no terminal, rode:
 
-    java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml [ClassePrincipal]
+    java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml pasta.classes
 
-> Substitua `[ClassePrincipal]` pelo nome da sua classe principal (com método `launch`).
+> Substitua `pasta.classes` pelo nome da sua classe principal (com método `launch`).
 
 ---
 
@@ -54,19 +54,3 @@ Ainda no terminal, rode:
 - Sempre abra a pasta do projeto com `subl .` para facilitar a edição.
 
 ---
-
-Esse fluxo serve para todos os seus projetos JavaFX, apenas altere os nomes das pastas, arquivos e classes conforme precisar.
-
-
-
-cd .. 
-# Agora você deve estar em ~/projects/src/Java
-
-
-compilar
-
-# Estando na pasta ~/projects/src/Java
-javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d . pasta/arquivo.java
-
-# Ainda na pasta ~/projects/src/Java
-java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml pasta.classes
